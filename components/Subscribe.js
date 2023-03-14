@@ -5,7 +5,7 @@ function Subscribe() {
       <div className={"bg-orange px-[16px] pt-[50px] mb-[10px] py-[70px]"}>
         <div
           className={
-            "mx-[16px] font-extrabold text-white text-[30px] md:text-[38px] leading-[40px] text-center font-mono tracking-tighter mb-[25px] md:mx-[90px]"
+            "mx-[16px] font-extrabold text-white text-[30px] md:text-[38px] leading-[40px] text-center font-mono tracking-tighter mb-[25px] md:mx-[90px] md:-tracking-wider"
           }
         >
           Subscribe to our newsletter

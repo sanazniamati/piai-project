@@ -158,7 +158,7 @@ function Footer() {
         }
       ></div>
       {/*footer_copyright*/}
-      <div className={"copyright md:flex justify-between"}>
+      <div className={" md:flex justify-between md:mb-[30px]"}>
         <div
           className={
             "mx-[16px] flex gap-[15px] text-Aurora text-[12px] font-normal leading-[18px] md:text-gray  "

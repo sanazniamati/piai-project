@@ -1,15 +1,15 @@
 function Contacts() {
   return (
-    <div className={"lg:flex mx-[42px]"}>
+    <div className={"lg:flex lg:mx-[48px]  "}>
       <div>
         <div className="mt-[87px]  justify-center ">
-          <div className=" mx-[16px] lg:mx-0 text-center text-Aurora text-[30px] tracking-tight font-extrabold heading-[40px] font-mono md:mx-[106px] ">
+          <div className=" mx-[16px] lg:mx-0 text-center text-Aurora text-[30px] tracking-tight font-extrabold heading-[40px] font-mono md:mx-[106px] lg:text-start ">
             Left questions? Contacts us now for a free consultation and free
             trial!
           </div>
           <div
             className={
-              "text-center text-gray text-[16px] font-normal leading-[28px] sm:hidden md:flex md:mx-[114px] lg:mx-0 mt-[24px]"
+              "text-center text-gray text-[16px] font-normal leading-[28px] sm:hidden md:flex md:mx-[114px] lg:mx-0 mt-[24px] lg:text-start"
             }
           >
             Ut enim ad minima veniam, quis nostrum exercitationem ullam
@@ -17,7 +17,7 @@ function Contacts() {
           </div>
         </div>
         {/*contacts*/}
-        <div className="  mx-[16px] text-center mt-[125px] md:mt-[80px]">
+        <div className="  mx-[16px] text-center mt-[125px] md:mt-[80px] lg:text-start">
           <div className="email  ">
             <p className="text-[#9497A1]">Email address</p>
             <p className="text-[#99EFD0]">ensome@info.co.us</p>
