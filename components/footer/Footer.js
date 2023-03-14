@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import paiaIcon from "../../public/image/paiaIcon.png";
+import piaiIcon from "../../public/image/paiaIcon.svg";
 import chervron_down from "../../public/image/chervron_down.png";
 import facebook from "../../public/image/social_icons/facebook.svg";
 import twitter from "../../public/image/social_icons/twitter.svg";
@@ -13,11 +13,18 @@ import arrow from "../../public/image/icons/arrow.svg";
 function Footer() {
   return (
     <footer>
-      <div className={"md:mx-[161.5px] md:mt-[50px] mb-[50px]"}>
-        <div className={"mx-[16px] md:mx-0"}>
-          <Image src={paiaIcon} alt={"paia-icon"} />
-        </div>
-        <div className={"links sm:hidden md:flex gap-[90px] mt-[50px] "}>
+      <div
+        className={
+          "md:mx-[161.5px] md:mt-[50px] mb-[30px] lg:flex lg:justify-between"
+        }
+      >
+        <Image
+          className={"mx-[16px] mt-[60px] md:mx-0"}
+          src={piaiIcon}
+          alt={"paia-icon"}
+        />
+        {/*links*/}
+        <div className={" sm:hidden md:flex gap-[90px] mt-[50px] "}>
           <ul className={"text-Aurora text-[14px] font-normal"}>
             <li className={"text-[16px] font-bold"}>About</li>
             <li>Home</li>
@@ -42,10 +49,14 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className={"footer-menu md:hidden mx-[16px] mb-[26px]"}>
+      <div
+        className={
+          "font-bold text-[16px] footer-menu md:hidden mx-[16px] mb-[26px]"
+        }
+      >
         <div
           className={
-            " py-[15px] border-b border-solid border-gray w-full flex justify-between items-center"
+            "  py-[15px] border-b border-solid border-gray w-full flex justify-between items-center"
           }
         >
           <div className={"text-Aurora"}>Quick link</div>
@@ -68,73 +79,99 @@ function Footer() {
           <Image src={chervron_down} alt={"chervron_down"} />
         </div>
       </div>
-      <div
-        className={"my-[10px]  w-full border-gray border-b border-solid"}
-      ></div>
+      {/*Line seprator*/}
       <div
         className={
-          "sm:hidden md:flex mb-[50px] md:mx-[161.5px] text-Aurora gap-[40px] my-[60px]"
+          "sm:hidden md:block my-[10px]  w-full border-gray border-b border-solid"
         }
-      >
-        <div className={" "}>
-          <div className={"title text-[16px] font-bold text-Aurora "}>
-            Contacts
+      ></div>
+      <div className={"lg:flex"}>
+        {/*contacts*/}
+        <div
+          className={
+            "sm:hidden md:flex mb-[50px] md:mx-[161.5px] text-Aurora gap-[40px] my-[60px]"
+          }
+        >
+          <div>
+            <div className={"title text-[16px] font-bold text-Aurora "}>
+              Contacts
+            </div>
+            <div>
+              <div>+1 601-201-5580</div>
+              <div className={"flex"}>
+                <div>ensome@info.co.us</div>
+                <Image src={arrow} alt={"arrow"} />
+              </div>
+            </div>
           </div>
           <div>
-            <div>+1 601-201-5580</div>
+            <div>1642 Washington Avenue, Jackson, MS, 39201</div>
             <div className={"flex"}>
-              <div>ensome@info.co.us</div>
+              <div>Driving derections</div>
               <Image src={arrow} alt={"arrow"} />
             </div>
           </div>
         </div>
-        <div>
-          <div>1642 Washington Avenue, Jackson, MS, 39201</div>
-          <div className={"flex"}>
-            <div>Driving derections</div>
-            <Image src={arrow} alt={"arrow"} />
+        <div
+          className={
+            "sm:hidden md:block my-[60px]  my-[10px]  w-full border-gray border-b border-solid"
+          }
+        ></div>
+        {/*social-links*/}
+        <div
+          className={" mx-[16px] mb-[31px] flex justify-between items-center"}
+        >
+          <div className={"text-Aurora md:hidden font-bold text-[16px] "}>
+            Follow us
+          </div>
+          <div className={"icons md:mx-auto "}>
+            <div className={"text-Aurora font-bold sm:hidden md:block"}>
+              Social
+            </div>
+            <div className={"flex gap-[12px] py-[15px]"}>
+              <div className={""}>
+                <Image src={facebook} alt={""} />
+              </div>
+              <div className={""}>
+                <Image src={twitter} alt={""} />
+              </div>
+              <div className={""}>
+                <Image src={linkdin} alt={""} />
+              </div>
+              <div className={""}>
+                <Image src={youtube} alt={""} />
+              </div>
+              <div className={""}>
+                <Image src={dribbble} alt={""} />
+              </div>
+              <div className={""}>
+                <Image src={behance} alt={""} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      {/*Line seprator*/}
       <div
         className={
-          "my-[60px]  my-[10px]  w-full border-gray border-b border-solid"
+          " sm:hidden  my-[10px]  w-full border-gray border-b border-solid"
         }
       ></div>
-      <div className={"social-links mx-[16px] mb-[31px] flex justify-between"}>
-        <div className={"text-Aurora md:hidden"}>Follow us</div>
-        <div className={"icons md:mx-auto "}>
-          <div className={"text-Aurora font-bold"}>Social</div>
-          <div className={"flex gap-[12px] py-[15px]"}>
-            <div className={""}>
-              <Image src={facebook} alt={""} />
-            </div>
-            <div className={""}>
-              <Image src={twitter} alt={""} />
-            </div>
-            <div className={""}>
-              <Image src={linkdin} alt={""} />
-            </div>
-            <div className={""}>
-              <Image src={youtube} alt={""} />
-            </div>
-            <div className={""}>
-              <Image src={dribbble} alt={""} />
-            </div>
-            <div className={""}>
-              <Image src={behance} alt={""} />
-            </div>
-          </div>
-        </div>
-      </div>
+      {/*footer_copyright*/}
       <div className={"copyright md:flex justify-between"}>
         <div
           className={
             "mx-[16px] flex gap-[15px] text-Aurora text-[12px] font-normal leading-[18px] md:text-gray  "
           }
         >
-          <p>Privacy policy</p>
-          <p>Terms of us</p>
+          <p className={"md:flex items-center md:gap-[5px]"}>
+            Privacy policy
+            <Image className={"sm:hidden md:block"} src={arrow} alt={arrow} />
+          </p>
+          <p className={"md:flex items-center md:gap-[5px]"}>
+            Terms of us
+            <Image className={"sm:hidden md:block"} src={arrow} alt={arrow} />
+          </p>
         </div>
         <div
           className={
@@ -146,7 +183,7 @@ function Footer() {
             " flex mx-[16px] mb-[10px]  text-gray text-[12px] font-normal leading-[18px] md:flex-col"
           }
         >
-          <p>© 2022 Ensome All </p>
+          <p>Ensome © 2022 All </p>
           <p> Rights Reserved</p>
         </div>
       </div>

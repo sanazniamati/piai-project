@@ -1,37 +1,41 @@
 function Contacts() {
   return (
-    <section>
-      <div className="mt-[87px] flex-col justify-center ">
-        <div className=" mx-[16px] text-center text-[#99EFD0] text-[30px] font-extrabold heading-[40px] font-mono md:mx-[106px] ">
-          Left questions? Contacts us now for a free consultation and free
-          trial!
+    <div className={"lg:flex mx-[42px]"}>
+      <div>
+        <div className="mt-[87px]  justify-center ">
+          <div className=" mx-[16px] lg:mx-0 text-center text-Aurora text-[30px] tracking-tight font-extrabold heading-[40px] font-mono md:mx-[106px] ">
+            Left questions? Contacts us now for a free consultation and free
+            trial!
+          </div>
+          <div
+            className={
+              "text-center text-gray text-[16px] font-normal leading-[28px] sm:hidden md:flex md:mx-[114px] lg:mx-0 mt-[24px]"
+            }
+          >
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam
+            corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+          </div>
         </div>
-        <div
-          className={
-            "text-center text-gray text-[16px] font-normal leading-[28px] sm:hidden md:flex md:mx-[114px] mt-[24px]"
-          }
-        >
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam
-          corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+        {/*contacts*/}
+        <div className="  mx-[16px] text-center mt-[125px] md:mt-[80px]">
+          <div className="email  ">
+            <p className="text-[#9497A1]">Email address</p>
+            <p className="text-[#99EFD0]">ensome@info.co.us</p>
+          </div>
+          <div className="phone mt-[22px]">
+            <p className="text-[#9497A1]">Phone number</p>
+            <p className="text-[#99EFD0]">+1601-201-5580</p>
+          </div>
+          <div className="address mt-[22px]">
+            <p className="text-[#9497A1]">Address</p>
+            <p className="text-[#99EFD0]">
+              1642 Washington Avenue, Jackson, MS, Mississippi, 39201
+            </p>
+          </div>
         </div>
       </div>
-      <div className="contacts  mx-[16px] text-center mt-[125px] md:mt-[80px]">
-        <div className="email  ">
-          <p className="text-[#9497A1]">Email address</p>
-          <p className="text-[#99EFD0]">ensome@info.co.us</p>
-        </div>
-        <div className="phone mt-[22px]">
-          <p className="text-[#9497A1]">Phone number</p>
-          <p className="text-[#99EFD0]">+1601-201-5580</p>
-        </div>
-        <div className="address mt-[22px]">
-          <p className="text-[#9497A1]">Address</p>
-          <p className="text-[#99EFD0]">
-            1642 Washington Avenue, Jackson, MS, Mississippi, 39201
-          </p>
-        </div>
-      </div>
-      <div className="contactUs shadow-3xl mx-[16px] mt-[125px] pb-[10px] mb-[95px] bg-[ #191B51] md:mx-[114px] ">
+      {/*contactUs*/}
+      <div className=" shadow-3xl mx-[16px] lg:mx-0 mt-[95px] pb-[10px] mb-[95px] bg-[ #191B51] md:mx-[114px] ">
         <div
           className={
             "text-center md:text-start md:ml-[60.67px] text-[#99EFD0] pt-[55px] mb-[30px] font-extrabold text-[30px] leading-[40px] font-mono "
@@ -104,7 +108,7 @@ function Contacts() {
           <div className={"flex justify-end"}>
             <button
               className={
-                "text-white w-[78px] py-[10px] px-[14px] bg-orange rounded-[6px] mt-[86px] md:w-[166.25px] "
+                "shadow-3xl text-white w-[68px] py-[10px] px-[14px] bg-orange rounded-[6px] mt-[86px] md:w-[166.25px] "
               }
             >
               send
@@ -112,7 +116,7 @@ function Contacts() {
           </div>
         </form>
       </div>
-    </section>
+    </div>
   );
 }
 

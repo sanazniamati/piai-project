@@ -1,12 +1,12 @@
 // library
 import Image from "next/image";
 // icons
-import piaiIcon from "../../public/image/paiaIcon.png";
+import piaiIcon from "../../public/image/paiaIcon.svg";
 import union from "../../public/image/Union.png";
 import hammergerIcon from "../../public/image/hammergerIcon.png";
-import userIcon from "../../public/image/userIcon.png";
-import notifyIcon from "../../public/image/notify.png";
-import closeIcon from "../../public/image/closeIcon.png";
+import userIcon from "../../public/image/userIcon.svg";
+import notifyIcon from "../../public/image/notify.svg";
+import closeIcon from "../../public/image/closeIcon.svg";
 
 function Header() {
   return (

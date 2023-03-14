@@ -8,6 +8,7 @@ import Header from "../components/header/Header";
 import TitleDescription from "../components/TitleDescription";
 import Contacts from "../components/Contacts";
 import Footer from "../components/footer/Footer";
+import Subscribe from "../components/Subscribe";
 
 export const getStaticProps = async () => {
   const res = await fetch("https://1khoffex32.api.quickmocker.com/get_text");
@@ -34,44 +35,7 @@ export default function Home({ sanazDatas }) {
           {/*Frame 509*/}
           <Contacts />
           {/*Frame 511  */}
-          <div>
-            {/*subscribe section*/}
-            <div
-              className={"bg-orange px-[16px] pt-[50px] mb-[10px] py-[70px]"}
-            >
-              <div
-                className={
-                  "mx-[16px] font-extrabold text-white text-[30px] leading-[40px] text-center font-mono tracking-tighter mb-[25px] md:mx-[90px]"
-                }
-              >
-                Subscribe to our newsletter
-              </div>
-              <div
-                className={
-                  "sm:hidden md:flex mx-[126px] text-white text-center "
-                }
-              >
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.
-              </div>
-              <div className={"md:flex md:mx-[190px] md:mt-[83px]"}>
-                <input
-                  className={
-                    "py-[15px] px-[19px] text-black rounded-[5px] mb-[20px] w-full md:w-[445px] "
-                  }
-                  type={"email"}
-                  placeholder={"Your email"}
-                />
-                <div
-                  className={
-                    "bg-[#0E0E35] w-full flex justify-center rounded-[5px] py-[15px] text-[#99EFD0]  md:px-[10px] md:h-[54px] "
-                  }
-                >
-                  Send
-                </div>
-              </div>
-            </div>
-          </div>
+          <Subscribe />
           <Footer />
         </div>
       </main>
