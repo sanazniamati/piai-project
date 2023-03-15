@@ -10,7 +10,7 @@ import closeIcon from "../../public/image/closeIcon.svg";
 
 function Header() {
   return (
-    <header className="flex justify-between items-center  px-[20px] py-[16px] xl:mx-[248px]  ">
+    <header className="flex justify-between items-center  px-[20px] py-[16px] lg:mx-[45px] xl:mx-[248px] 2xl:mx-[404px]  ">
       {/*left side*/}
       <div className="flex gap-[40px]">
         <Image className="md:hidden" src={piaiIcon} alt="paiaIcon" />

@@ -12,14 +12,14 @@ import arrow from "../../public/image/icons/arrow.svg";
 
 function Footer() {
   return (
-    <footer>
+    <footer className={"xl:mx-[248px] 2xl:mx-[404px]"}>
       <div
         className={
-          "md:mx-[161.5px] md:mt-[50px] mb-[30px] lg:flex lg:justify-between"
+          "md:mx-[161.5px] md:mt-[50px] mb-[30px] lg:flex lg:justify-between lg:mx-[45px]  "
         }
       >
         <Image
-          className={"mx-[16px] mt-[60px] md:mx-0"}
+          className={"mx-[16px] mt-[60px] md:mx-0 lg:mt-0"}
           src={piaiIcon}
           alt={"paia-icon"}
         />
@@ -85,11 +85,11 @@ function Footer() {
           "sm:hidden md:block my-[10px]  w-full border-gray border-b border-solid"
         }
       ></div>
-      <div className={"lg:flex"}>
+      <div className={"lg:flex lg:justify-between lg:mx-[45px]"}>
         {/*contacts*/}
         <div
           className={
-            "sm:hidden md:flex mb-[50px] md:mx-[161.5px] text-Aurora gap-[40px] my-[60px]"
+            "sm:hidden md:flex mb-[50px] md:mx-[161.5px] text-Aurora gap-[40px] my-[60px] lg:mx-0"
           }
         >
           <div>
@@ -112,9 +112,10 @@ function Footer() {
             </div>
           </div>
         </div>
+        {/*Line seprator*/}
         <div
           className={
-            "sm:hidden md:block my-[60px]  my-[10px]  w-full border-gray border-b border-solid"
+            "sm:hidden md:block lg:hidden my-[60px]  my-[10px]  w-full border-gray border-b border-solid"
           }
         ></div>
         {/*social-links*/}
@@ -154,7 +155,7 @@ function Footer() {
       {/*Line seprator*/}
       <div
         className={
-          " sm:hidden  my-[10px]  w-full border-gray border-b border-solid"
+          " sm:hidden lg:block  my-[10px]  w-full border-gray border-b border-solid"
         }
       ></div>
       {/*footer_copyright*/}
@@ -180,7 +181,7 @@ function Footer() {
         ></div>
         <div
           className={
-            " flex mx-[16px] mb-[10px]  text-gray text-[12px] font-normal leading-[18px] md:flex-col"
+            " flex mx-[16px] mb-[10px]  text-gray text-[12px] font-normal leading-[18px] md:flex-col lg:flex-row"
           }
         >
           <p>Ensome © 2022 All </p>

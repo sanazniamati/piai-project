@@ -1,16 +1,12 @@
 // library
 import Head from "next/head";
-// icons
-import title from "../public/image/title.svg";
-import divider from "../public/image/icons/divider.svg";
-
 // components
 import Header from "../components/header/Header";
 import TitleDescription from "../components/TitleDescription";
 import Contacts from "../components/Contacts";
 import Footer from "../components/footer/Footer";
 import Subscribe from "../components/Subscribe";
-import Image from "next/image";
+import Breadcrumd from "../components/Breadcrumd";
 
 export const getStaticProps = async () => {
   const res = await fetch("https://1khoffex32.api.quickmocker.com/get_text");
@@ -30,26 +26,16 @@ export default function Home({ sanazDatas }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className=" relative ">
-          <Header />
-          {/*breadcrumd*/}
-          <div className={"sm:hidden md:hidden lg:flex mx-[16px] gap-[9.5px]"}>
-            <div className={"text-[14px] font-medium leading-6 text-gray "}>
-              Home
-            </div>
-            <Image src={divider} alt={"divider"} />
-            <div className={"text-[14px] font-medium leading-6 text-white "}>
-              About Us
-            </div>
-          </div>
-          {/*title description*/}
-          <TitleDescription data={sanazDatas} />
-          {/*Frame 509*/}
-          <Contacts />
-          {/*Frame 511  */}
-          <Subscribe />
-          <Footer />
-        </div>
+        <Header />
+        {/*breadcrumd*/}
+        <Breadcrumd />
+        {/*title description*/}
+        <TitleDescription data={sanazDatas} />
+        {/*Frame 509*/}
+        <Contacts />
+        {/*Frame 511  */}
+        <Subscribe />
+        <Footer />
       </main>
     </>
   );

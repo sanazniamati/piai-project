@@ -1,15 +1,19 @@
 function Contacts() {
   return (
-    <div className={"lg:flex lg:mx-[48px]  "}>
-      <div>
+    <div
+      className={
+        "lg:flex lg:mx-[45px] justify-between xl:mx-[248px] 2xl:mx-[404px]  "
+      }
+    >
+      <div className={""}>
         <div className="mt-[87px]  justify-center ">
-          <div className=" mx-[16px] lg:mx-0 text-center text-Aurora text-[30px] tracking-tight font-extrabold heading-[40px] font-mono md:mx-[106px] lg:text-start ">
+          <div className=" mx-[16px] lg:mx-0 text-center text-Aurora text-[30px] tracking-tight font-extrabold heading-[40px] font-mono md:mx-[106px] lg:w-[548px] lg:text-start lg:text-[38px] ">
             Left questions? Contacts us now for a free consultation and free
             trial!
           </div>
           <div
             className={
-              "text-center text-gray text-[16px] font-normal leading-[28px] sm:hidden md:flex md:mx-[114px] lg:mx-0 mt-[24px] lg:text-start"
+              "text-center text-gray text-[16px] font-normal leading-[28px] sm:hidden md:flex md:mx-[114px] lg:mx-0 mt-[24px] lg:text-start lg:w-[540px]"
             }
           >
             Ut enim ad minima veniam, quis nostrum exercitationem ullam
@@ -35,15 +39,17 @@ function Contacts() {
         </div>
       </div>
       {/*contactUs*/}
-      <div className=" shadow-3xl mx-[16px] lg:mx-0 mt-[95px] pb-[10px] mb-[95px] bg-[ #191B51] md:mx-[114px] ">
+      <div className=" shadow-3xl mx-[16px] lg:mx-0 mt-[95px] pb-[10px] mb-[95px] bg-[ #191B51] md:mx-[114px] lg:relative lg:w-[445px] ">
         <div
           className={
-            "text-center md:text-start md:ml-[60.67px] text-[#99EFD0] pt-[55px] mb-[30px] font-extrabold text-[30px] leading-[40px] font-mono "
+            "text-center md:text-start md:ml-[60.67px]  text-[#99EFD0] pt-[55px] mb-[30px] font-extrabold text-[30px] leading-[40px] font-mono "
           }
         >
           Contact Us
         </div>
-        <form className={"ml-[21px] mr-[19px] mb-[37px] md:mx-[97px]"}>
+        <form
+          className={"ml-[21px] mr-[19px] mb-[37px] md:mx-[97px] lg:mx-[45px]"}
+        >
           <div>
             <div className="flex flex-col gap-[5px] ">
               <label
