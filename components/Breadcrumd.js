@@ -6,7 +6,7 @@ function Breadcrumd() {
   return (
     <div
       className={
-        "sm:hidden md:hidden lg:flex mx-[16px] gap-[9.5px] lg:mx-[65px] xl:mx-[248px] 2xl:mx-[404px]"
+        "sm:hidden md:hidden lg:flex lg:mt-[25px] mx-[16px] gap-[9.5px] lg:mx-[65px] xl:mx-[248px] 2xl:mx-[404px]"
       }
     >
       <div className={"text-[14px] font-medium leading-6 text-gray "}>Home</div>

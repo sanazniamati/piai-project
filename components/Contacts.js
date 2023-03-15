@@ -5,7 +5,7 @@ function Contacts() {
         "lg:flex lg:mx-[45px] justify-between xl:mx-[248px] 2xl:mx-[404px]  "
       }
     >
-      <div className={""}>
+      <div>
         <div className="mt-[87px]  justify-center ">
           <div className=" mx-[16px] lg:mx-0 text-center text-Aurora text-[30px] tracking-tight font-extrabold heading-[40px] font-mono md:mx-[106px] lg:w-[548px] lg:text-start lg:text-[38px] ">
             Left questions? Contacts us now for a free consultation and free
